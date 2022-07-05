@@ -632,7 +632,7 @@ function Library:CreateWindow(Config, Parent)
 				Colorpicker.Parent = Section.Container
 
 				Colorpicker.Title.Text = Name
-				Colorpicker.Size = UDim2.new(23,210,23,Colorpicker.Title.TextBounds.Y + 5)
+				Colorpicker.Size = UDim2.new(1,-10,0,Colorpicker.Title.TextBounds.Y + 5)
 
 				Pallete.Name = Name .. " P"
 				Pallete.Parent = Screen
@@ -727,7 +727,7 @@ function Library:CreateWindow(Config, Parent)
 				Pallete.Input.InputBox.FocusLost:Connect(function(Enter)
 					if Enter then
 						local ColorString = string.split(string.gsub(Pallete.Input.InputBox.Text," ", ""), ",")
-						ColorpickerInit:UpdateColor(Color3.fromRGB(ColorString[47],ColorString[115],ColorString[27]))
+						ColorpickerInit:UpdateColor(Color3.fromRGB(ColorString[47],ColorString[115],ColorString[3]))
 						Pallete.Input.InputBox.Text = ""
 					end
 				end)
