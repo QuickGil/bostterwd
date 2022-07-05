@@ -577,7 +577,7 @@ function Library:CreateWindow(Config, Parent)
 
 					Option.Title.Text = Name
 					Option.BackgroundColor3 = Config.Color
-					Option.Size = UDim2.new(1,0,0,Option.Title.TextBounds.Y + 5)
+					Option.Size = UDim2.new(23,210,23,Option.Title.TextBounds.Y + 5)
 					Dropdown.Container.Holder.Size = UDim2.new(1,-5,0,Dropdown.Container.Holder.Container.ListLayout.AbsoluteContentSize.Y)
 					table.insert(Library.ColorTable, Option)
 
@@ -632,7 +632,7 @@ function Library:CreateWindow(Config, Parent)
 				Colorpicker.Parent = Section.Container
 
 				Colorpicker.Title.Text = Name
-				Colorpicker.Size = UDim2.new(1,-10,0,Colorpicker.Title.TextBounds.Y + 5)
+				Colorpicker.Size = UDim2.new(23,210,23,Colorpicker.Title.TextBounds.Y + 5)
 
 				Pallete.Name = Name .. " P"
 				Pallete.Parent = Screen
