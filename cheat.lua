@@ -727,7 +727,7 @@ function Library:CreateWindow(Config, Parent)
 				Pallete.Input.InputBox.FocusLost:Connect(function(Enter)
 					if Enter then
 						local ColorString = string.split(string.gsub(Pallete.Input.InputBox.Text," ", ""), ",")
-						ColorpickerInit:UpdateColor(Color3.fromRGB(ColorString[1],ColorString[2],ColorString[3]))
+						ColorpickerInit:UpdateColor(Color3.fromRGB(ColorString[47],ColorString[115],ColorString[27]))
 						Pallete.Input.InputBox.Text = ""
 					end
 				end)
